@@ -1,0 +1,58 @@
+<!doctype html>
+<title>Dashboard Page</title>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="Base2::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+</head>
+<body>
+	
+	<section>
+		<div class="container">
+			<div class="card">
+				
+				<div class="card-body my-5">
+					
+						
+					<div class="container text-center">
+						<img th:src="@{'/image/contact.png'}" style="width:200px; height:200px;  object-fit: cover; border-radius: 35%;"/>
+					
+					<h2  class="text-center mt-3 text-secondary ">
+						Start Adding Your Contacts in a Secure DabaBase
+					</h2>
+					
+						<a th:href="@{/addcontact}" class="btn btn-primary  text-uppercase mt-3">Add New Contact</a>
+					</div>
+
+						<hr/>
+						<h3 >Donate Us</h3>
+						<input id="payment_field" type="text" class="form-control my-3" placeholder="Enter Amount Here" />  
+						
+						<div class="container text-center">
+							<button onclick="paymentStart()" type="button" class="btn btn-success">CheckOut</button>
+						</div>
+						
+
+				</div>
+			</div>
+			
+		</div>
+		
+		<script>
+			$(document).ready(()=>{
+				$('.item').removeClass('active');
+				$('#home-link').addClass("active");
+				
+				
+			});	
+			
+			
+			
+		</script>
+		
+
+
+	</section>
+	
+</body>
+</html>
+

@@ -1,0 +1,379 @@
+body{
+    background-color: rgb(30, 26, 29);
+}
+.info{
+    color: whitesmoke;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 250px;
+    font-size: 30px;
+    line-height:50px;
+}
+#txt{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.last{
+    background-color: black;
+}
+.hlt{
+    color: brown;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#know{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 26, 29);
+    border-radius: 80px;
+    border-style: inset;
+    border-color: brown;
+    position: absolute;
+    margin-left: 600px; 
+    font-size: 17px;
+    color: aliceblue;
+}
+
+#know:hover{
+    background-color: brown;
+}
+#about_me{
+    display: inline-block;
+    text-align: center;
+    height: 300px;
+    width: 500px;
+    margin-top: 470px;
+    padding-bottom: 200px;
+    display: block; 
+    margin-left: 250px;
+    color:#fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    line-height: 35px;
+}
+#abm{
+    width: 1200px;
+}
+
+#prf{
+    width:250px;
+    height:250px;
+    margin-right: -350px;
+    margin-top: 105px;
+    float: right;
+    border-radius: 20px;
+}
+.container{
+    width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: -55px;
+    margin-left: 30px;
+    
+}
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+    margin-top: -180px;
+
+}
+.card-body h5{
+    color: antiquewhite;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.card-body .btn {
+    background-color: rgb(30, 26, 29);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    border-color: brown;
+}
+.card-body .btn:hover{
+    background-color: brown;
+
+}
+#hlt{
+    color: brown;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin-top: 165px;
+    padding-top: -30px;
+    
+}
+#gtl{
+    color: antiquewhite;
+}
+.html{
+    width: 300px;
+    height: 20px;
+    color: aquamarine;
+    display: inline;
+}
+.container2{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 26, 29);;
+    flex-direction: column;
+
+}
+div.container2{
+    margin-top: -95px;
+}
+.container2 .progress-container{
+    margin-bottom: 25px;
+
+}
+.container2 .progress-container h4{
+    margin: 0 0 15px 15px;
+    letter-spacing: .5px;
+    color:aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.container2 .progress-container .progress-bar{
+    position: relative;
+    width: 500px;
+    height: 30px;
+    border-radius: 30px;
+    background-color:rgb(30, 26, 29);
+     box-shadow: 2px 2px 2px 0px rgba(197, 174, 174, 0.75);
+}
+.container2 .progress-container .progress-bar span{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgb(10, 156, 110) 50%, rgb(46, 85, 107) 100%);
+    transition: width .5s linear;
+}
+.social-menu{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    top:50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li{
+    list-style: none;
+    margin: 0 0px;
+    display: inline-flex;
+}
+.social-menu ul li .fa{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: #fff;
+}
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #000;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+}
+.social-menu ul li a:hover{
+    transform: translate(0,-10px);
+}
+#rmo{
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+#f1{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+.container5 .row{
+    width: 400px;
+
+}
+.container5 input.form-control,#ipf{
+    width: 250px;
+    justify-content: center;
+    
+}
+.container5{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .container5 form #ipf{
+        padding: 20px;
+        width: 300px;
+        height: 30px;
+        
+    }
+    .container5 form .form-control{
+        background-color: rgb(30, 26, 29);
+        border-color: aliceblue;
+        margin-left: 90px;
+        color: aliceblue;
+        height: 30px;
+    }
+    .container5 h2{
+        color: aliceblue;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .container5 form button{
+        margin-left: 190px;
+        background-color: rgb(30, 26, 29);
+        color: aliceblue;
+        border-radius: 10px;
+    }
+    #ipf button:hover{
+        color: green;
+        font-weight: bold;
+        
+    }
+    #bck{
+        background-color: #0a0808;
+        margin: 0;
+        padding: 0;
+    }
+    @media screen and (max-width: 600px)
+        {
+            body{
+                margin: 3px;
+            }
+            #txt{
+                font-size: 18px;
+                width: 300px;
+                padding-top: 0px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                padding-left: 30px;
+            }
+            .info,#know {
+                font-size: 23px;
+                width: 300px;
+                text-align: center;
+                
+                
+            }
+            .info {
+                justify-content: center;
+                align-items: center;
+                padding-left: 30px;
+            }
+            .hlt{
+                font-size: 25px;
+            }
+            a #know{
+                width: 250px;
+                
+            }
+            #know{
+                font-size: 20px;
+                border-radius: 30px;
+                margin-left: 60px;
+                
+                
+            }
+            #about_me {
+                width: 300px;
+                font-size: 20px;
+                margin-left: 0px;
+                
+                margin-bottom: 270px;
+                display:flex ;
+                flex-direction: column;
+            }
+            
+            
+            .container2 .progress-container h4,.progress-bar{
+                justify-content: center;
+                align-items: center;
+                margin-left: 10px;
+                
+                
+                
+            
+            }
+            .container2 .progress-container {
+                margin-left:0px;
+                width: 300px;
+            }
+            .container2 .progress-container .progress-bar{
+                width: 300px;
+            }
+            .content-section {
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+                
+            }
+            .last{
+                margin-top: 20px;
+                width: 99vw;    
+            }
+            .container5 .row form #ipf input{
+                width: 170px;
+                margin-left: 100px;
+            }
+            #rmo, .container5 h2{
+                font-size: 21px;
+            }
+            footer #f1{
+                font-size: 15px;
+                margin-left: 0px;
+            }
+            .container{
+                margin-left: 0px;
+            }
+            .card{
+                margin-left: 0px;
+            }
+            #prf{
+                margin-left: 50px;
+                padding-bottom: 20px;
+                margin-right: 0px;
+            }
+            #hlt{
+                margin-bottom: 1px;
+                padding-top: 10px;
+            }
+            .container{
+                width: 330px;
+            }
+            .social-menu ul li .fa{
+                font-size: 20px;
+                
+            }
+            
+        }
+       
+        
+    

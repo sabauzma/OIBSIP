@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0" />
+    <title>Younus Qureshi</title>
+  </head>
+  <body>
+    <div class="info">
+      Hello I'm <span class="hlt">YOUNUS QURESHI.</span><br />
+      I'm a <span class="auto-type">FULL-STACK web developer</span>
+
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".auto-type", {
+          strings: [
+            "Full-stack Web Developer",
+            "Cyber Security Enthusiast",
+            "UI / UX designer",
+            "Story Writer",
+            "Urdu Poet",
+          ],
+          typeSpeed: 150,
+          loop: true,
+        });
+      </script>
+    </div>
+    <br />
+
+    <a href="#about_me"><button id="know">See my journey &#8594;</button></a>
+
+    <div id="about_me">
+      <img id="prf" src="hero.JPG" />
+
+      <p id="txt">
+        <span class="hlt">ABOUT ME:</span> <br /><br />
+        I am Mohammed Younus Qureshi from India. I am pursuing Bachelor's degree
+        from Vaagdevi college of engineering. I am very enthusiastic in web
+        development and cyber security. You can check my projects in this
+        website. I'm also passionate about urdu and english literature. I write
+        poems and story books in both the languages.
+      </p>
+    </div>
+    <br /><br />
+
+    <div class="container2">
+      <p id="hlt">SKILLED IN:</p>
+      <div class="progress-container">
+        <h4>HTML</h4>
+        <div class="progress-bar">
+          <span data-width="90%"></span>
+        </div>
+      </div>
+      <div class="progress-container">
+        <h4>CSS</h4>
+        <div class="progress-bar">
+          <span data-width="70%"></span>
+        </div>
+      </div>
+      <div class="progress-container">
+        <h4>Java</h4>
+        <div class="progress-bar">
+          <span data-width="30%"></span>
+        </div>
+      </div>
+      <div class="progress-container">
+        <h4>JavaScript</h4>
+        <div class="progress-bar">
+          <span data-width="40%"></span>
+        </div>
+      </div>
+      <div class="progress-container">
+        <h4>React.js</h4>
+        <div class="progress-bar">
+          <span data-width="25%"></span>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+
+    <p id="hlt">MY WORKS:</p>
+    <div class="container">
+      <div class="content-section">
+        <div class="card" style="width: 18rem">
+          <img src="txt.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Text Convertor</h5>
+            <a href="https://text-converter-by-yq.netlify.app/"
+              ><button type="button" class="btn">Visit website</button></a
+            ><br /><br />
+            <a href=""><button type="button" class="btn">View code</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="alm.jpg"
+            class="card-img-top"
+            alt="..."
+            width="150px"
+            height="150px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Enterprise Website</h5>
+            <p></p>
+            <a href="http://almtraders.ml/"
+              ><button type="button" class="btn">Visit website</button></a
+            ><br /><br />
+            <a href="https://github.com/younusqureshi/special-enigma"
+              ><button type="button" class="btn">View code</button></a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="ball.png"
+            class="card-img-top"
+            alt="..."
+            width="150px"
+            height="150px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">21Balls-game</h5>
+
+            <a href="https://21balls-game-by-yq.netlify.app/"
+              ><button type="button" class="btn">Visit website</button></a
+            ><br /><br />
+            <a href="https://github.com/younusqureshi/21Balls-Game"
+              ><button type="button" class="btn">View code</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="last">
+      <div class="container5">
+        <h2>Work with me</h2>
+        <div class="row">
+          <form action="submit()" method="post">
+            <div class="col-md-4" id="ipf">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Name"
+                required
+                id="name"
+              />
+            </div>
+            <div class="col-md-4" id="ipf">
+              <input
+                id="email"
+                class="form-control"
+                type="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+            <div class="col-md-4" id="ipf">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Work description"
+                required
+                id="work"
+              />
+            </div>
+            <div class="col-md-4" id="ipf">
+              <button type="button" onclick="sendEmail()" class="btn">
+                SUBMIT
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- <div class="container4">
+            <h3>Your rating here</h3>
+            <div class="star">
+                <span id="boot-icon" class="bi bi-star-fill" onclick="demo()"></span>
+                <span id="boot-icon" class="bi bi-star-fill" ></span>
+                <span id="boot-icon" class="bi bi-star-fill" ></span>
+                <span id="boot-icon" class="bi bi-star-fill" ></span>
+                <span id="boot-icon" class="bi bi-star-fill" ></span>
+                </div>
+                </div>
+            </div> -->
+      <p id="rmo">Connect me on :</p>
+      <div class="social-menu">
+        <ul>
+          <li>
+            <a href="https://github.com/younusqureshi"
+              ><i class="fa fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/younusqureshimohammed/"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/younus.qureshi.338"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        function sendEmail() {
+          let name1 = document.getElementById("name").value;
+          let email1 = document.getElementById("email").value;
+          let work1 = document.getElementById("work").value;
+
+          let body =
+            "Name:" + name1 + "</br> Email:" + email1 + "</br> Work:" + work1;
+          Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "uniqueshayar2829@gmail.com",
+            Password: "CBD67778863750C3AE0DFEC48AF76F8E994A",
+            To: "uniqueshayar2829@gmail.com",
+            From: "uniqueshayar2829@gmail.com",
+            Subject: "From your portfolio",
+            Body: body,
+          }).then((message) => alert("Message Sent."));
+        }
+      </script>
+      <footer>
+        <p id="f1">
+          COPYRIGHT &copy;2022 By Younus Qureshi, All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

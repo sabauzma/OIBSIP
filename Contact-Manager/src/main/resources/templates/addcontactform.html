@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="Base3::layout(~{::section})">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+    <title>Add Contact Page</title>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            margin: 2rem 0;
+            border-radius: 1rem;
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        .form-control {
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            padding: 0.5rem 2rem;
+            font-size: 1rem;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="mt-1">Add Contacts</h1>
+                </div>
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                                <form th:action="@{/processcontact}" th:object="${contact}" method="POST" enctype="multipart/form-data" class="mt-2">
+                                    <!-- Your form fields go here -->
+                                    <!-- ... -->
+                                    									
+                                <!-- First Name Field -->
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text mr-3">
+                                            <i class="fa fa-plus"></i>
+                                        </div>
+                                    </div>
+                                    <input type="text" id="cname" name="cname" th:field="*{cname}" placeholder="Enter Name Here" class="form-control" required>
+                                </div>
+
+                                <!-- Second Name Field -->
+                                <div class="input-group mt-3">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text mr-3">
+                                            <i class="fas fa-user-alt"></i>
+                                        </div>
+                                    </div>
+                                    <input type="text" id="csecondName" name="csecondName" th:field="*{csecondName}" placeholder="Enter Nick Name Here" required class="form-control">
+                                </div>
+
+                                <!-- Phone Field -->
+                                <div class="input-group mt-3">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text mr-3">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                    </div>
+                                    <input type="number" id="cphone" name="cphone" th:field="*{cphone}" placeholder="Enter Phone Number" required class="form-control">
+                                </div>
+
+                                <!-- Email Field -->
+                                <div class="input-group mt-3">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text mr-3">
+                                            @
+                                        </div>
+                                    </div>
+                                    <input type="email" id="cemail" name="cemail" th:field="*{cemail}" placeholder="Enter Email-Id" required class="form-control">
+                                </div>
+
+                                <!-- Work Field -->
+                                <div class="input-group mt-3">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text mr-3">
+                                            <i class="fas fa-briefcase"></i>
+                                        </div>
+                                    </div>
+                                    <input type="text" id="cwork" name="cwork" th:field="*{cwork}" placeholder="Enter Work Place" required class="form-control">
+                                </div>
+
+                                <!-- Contact Description -->
+                                <div class="form-group mt-3">
+                                    <textarea name="cdescription" id="mytextarea" th:field="*{cdescription}" rows="10" class="form-control" placeholder="Enter Contact Description"></textarea>
+                                </div><br>
+
+                                <!-- Image Field -->
+                                <div class="form-group">
+                                    <input type="file"  name="cimage1"   />
+                                    <!----Don't Give Name Of Object  Same as that of Column name in entity class-->
+                                    <label class="custom-file-label" for="cimage">Choose file...</label>
+                                </div>
+
+						
+
+                                <div class="container text-center">
+                                    <button class="btn btn-primary">Save Contact</button>
+                                </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+     <script src="https://cdn.tiny.cloud/1/rjdoc6649q9jt9nek1m8rllq9zvuwoynfvvnexacx5aiit0l/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+     
+    <script>
+      tinymce.init({
+        selector: '#mytextarea'
+      });
+    </script>
+    </div>
+    
+    <script>
+			$(document).ready(()=>{
+				$('.item').removeClass('active');
+				$('#contact-link').addClass("active");
+			});	
+			
+		</script>
+		
+    </section>
+</body>
+</html>
